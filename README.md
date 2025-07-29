@@ -15,6 +15,7 @@ for countries categorized as on-track or off-track in achieving under-five morta
 
 - Python 3.8+
 - Git
+- python3.12-env (for Ubuntu)
 
 ### Installation Steps
 
@@ -22,12 +23,15 @@ for countries categorized as on-track or off-track in achieving under-five morta
    ```bash
    git clone https://github.com/mydatadune/UNICEF-Consultancy-Assessment-Results.git
    cd UNICEF-Consultancy-Assessment-Results
-2. **Configure processing**:  
-Edit the `user_profile.yaml` file to configure file location and processing parameters.  
+2. **For Linux**:  
+   ```bash
+   chmod +x run_project.sh
+3. **Configure processing**:  
+Edit the `user_profile.yaml` file to configure file locations and processing parameters.  
 The report file name and text can be configured with the version and date configuration values using {version} and {date} embedded strings.
 ### How to Run the Code
 
-In Windows execute `run_project.bat` and in Linux execute `run_project.sh`
+In Windows execute `run_project.bat` and in Linux execute `./run_project.sh`
 
 ### Description of Outputs
 A report is created as a pdf file containing 3 sections:
