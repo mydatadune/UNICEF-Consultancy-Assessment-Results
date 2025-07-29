@@ -43,7 +43,7 @@ Configurable text that will appear at the bottom of the report.
 The repository includes:
 * scripts directory - python code
 * data directory - input files
-* output directory - reports (will be created upon execution)
+* output directory - reports
 * docs directory - documentation
 * user_profile.yaml - processing configuration
 * run_project scripts (.bat and .sh) - end-to-end execution of workflow
