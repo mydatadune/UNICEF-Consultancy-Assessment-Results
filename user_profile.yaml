@@ -1,0 +1,39 @@
+files:
+  root_path: .
+  data_path: data
+  output_path: output
+  countries:
+    path: "additional_files/On-track and off-track countries.xlsx"
+  population:
+    path: "additional_files/WPP2022_GEN_F01_DEMOGRAPHIC_INDICATORS_COMPACT_REV1.xlsx"
+    worksheet: "Projections"
+    header_row: 17
+  gdr:
+    path: "unicef_gdr/fusion_GLOBAL_DATAFLOW_UNICEF_1.0_.MNCH_ANC4+MNCH_SAB.csv"
+  report:
+    path: "analysis_report v{version} {date}.pdf"
+    version: 1.0.7
+    date: 2025-07-28
+    prefix_text: |
+      Health Coverage Report
+      Version {version}, Generated on {date}
+
+      This chart shows the population-weighted averages of key health indicators
+      categorized by status (On-track or Off-track).
+    suffix_text: |
+      Population weighting was based on projected births for 2022.
+      While most countries had indicator data for 2022, some countries only have indicator data
+      from earlier years, depending on the date of the latest data collection exercise.
+
+      The analysis demonstrates that On-track countries have significantly
+      higher coverage of ANC4 and SAB indicators.
+
+      Positions applied for:
+      - Learning and Skills Data Analyst Consultant - Req. #581598
+      - Administrative Data Analyst - Req. #581696
+
+      Available also for positions:
+      - Household Survey Data Analyst Consultant - Req. #581656
+      - Microdata Harmonization Consultant - Req. #581699
+processing:
+  population_year: 2022
